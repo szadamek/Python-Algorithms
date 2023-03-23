@@ -1,0 +1,27 @@
+{
+   "states": ["q0", "q1", "q2", "q4"],
+   "input_symbols": ["a", "0", "1"],
+   "transitions": [
+      {"current_state": "q0", "symbol": "a", "next_state": "q1"},
+      {"current_state": "q0", "symbol": "0", "next_state": "q5"},
+      {"current_state": "q0", "symbol": "1", "next_state": "q5"},
+
+      {"current_state": "q1", "symbol": "a", "next_state": "q4"},
+      {"current_state": "q1", "symbol": "0", "next_state": "q2"},
+      {"current_state": "q1", "symbol": "1", "next_state": "q2"},
+
+      {"current_state": "q2", "symbol": "a", "next_state": "q4"},
+      {"current_state": "q2", "symbol": "0", "next_state": "q2"},
+      {"current_state": "q2", "symbol": "1", "next_state": "q2"},
+
+      {"current_state": "q4", "symbol": "a", "next_state": "q5"},
+      {"current_state": "q4", "symbol": "0", "next_state": "q4"},
+      {"current_state": "q4", "symbol": "1", "next_state": "q4"},
+
+      {"current_state": "q5", "symbol": "a", "next_state": "q5"},
+      {"current_state": "q5", "symbol": "0", "next_state": "q5"},
+      {"current_state": "q5", "symbol": "1", "next_state": "q5"}
+   ],
+   "start_state": "q0",
+   "accept_states": ["q4"]
+}
